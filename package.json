@@ -5,8 +5,17 @@
   "hexo": {
     "version": "3.9.0"
   },
+  "yuqueConfig": {
+    "baseUrl": "https://www.yuque.com/api/v2",
+    "login": "youming-xtfvz",
+    "repo": "ntv9me",
+    "mdNameFormat": "title",
+    "postPath": "source/_posts/yuque"
+  },
   "scripts": {
-    "generate": "hexo clean && hexo g"
+    "sync": "yuque-hexo sync",
+    "clean:yuque": "yuque-hexo clean",
+    "generate": "npm run sync && hexo clean && hexo g"
   },
   "dependencies": {
     "hexo": "^3.9.0",
