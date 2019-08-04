@@ -15,9 +15,6 @@ cache:
 # 配置环境
 before_install:
 - export TZ='Asia/Shanghai' # 更改时区
-# 配置 git 替换为自己的信息
-- git config --global user.name 'breathcold'
-- git config --global user.email '13027196096@163.com'
 
 # 安装依赖
 install:
@@ -26,7 +23,7 @@ install:
 
 # 部署的命令
 script:
-- npm run deploy  # hexo clean && hexo g -d
+- npm run generate  # hexo clean && hexo g 
 
 after_script:
   - git clone https://${GH_REF} .deploy_git  # GH_REF是最下面配置的仓库地址
