@@ -29,7 +29,8 @@
     "hexo-renderer-marked": "^1.0.1",
     "hexo-renderer-stylus": "^0.3.3",
     "hexo-server": "^0.3.3",
-    "travis": "^0.1.1"
+    "travis": "^0.1.1",
+    "yuque-hexo": "^1.6.1"
   },
   "devDependencies": {
     "hexo-util": "^0.6.3"
